@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorites: Favorites
     let item: MenuItem
     
     var body: some View {
@@ -34,6 +35,13 @@ struct ItemDetail: View {
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing: favoriteButton)
+    }
+    
+    var favoriteButton: some View {
+        FavoriteButton(favorited: favorites.contains(item: item),
+                       onFavorited: { favorites.add(item: item) },
+                       onUnfavorited: { favorites.delete(item: item) })
     }
 }
 
@@ -42,6 +50,7 @@ struct ItemDetail_Previews: PreviewProvider {
         NavigationView {
             ItemDetail(item: MenuItem.example)
                 .environmentObject(Order())
+                .environmentObject(Favorites())
         }
     }
 }

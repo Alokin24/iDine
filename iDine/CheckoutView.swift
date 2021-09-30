@@ -14,6 +14,7 @@ struct CheckoutView: View {
     @State private var loyaltyNumber = ""
     @State private var tipAmount = 15
     @State private var showingPaymentAlert = false
+    @State private var pickupTime = ""
     
     // MARK: - Environment objects
     @EnvironmentObject var order: Order
@@ -21,6 +22,7 @@ struct CheckoutView: View {
     // MARK: - Properties
     let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts = [10, 15, 20, 25, 0]
+    let pickupTimes = ["Now", "Tonight", "Tomorrow Morning"]
     var totalPrice: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -28,8 +30,6 @@ struct CheckoutView: View {
         let tipValue = total * Double(tipAmount) / 100
         return formatter.string(from: NSNumber(value: total + tipValue)) ?? "$0"
     }
-    
-   
     
     var body: some View {
         Form {
@@ -54,6 +54,17 @@ struct CheckoutView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
+            }
+            
+            Section(header: Text("Pickup time")) {
+                Picker("Click to choose pickup time", selection: $pickupTime) {
+                    ForEach(pickupTimes, id: \.self) {
+                        Text("\($0)")
+                    }
+                }
+                .pickerStyle(MenuPickerStyle())
+                
+                Text("Pickup time: \(pickupTime)")
             }
             
             Section(header: Text("TOTAL: \(totalPrice)").font(.largeTitle)) {

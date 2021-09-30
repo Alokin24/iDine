@@ -20,6 +20,9 @@
 		6A17E10B2705EACF00F5F839 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17E10A2705EACF00F5F839 /* OrderView.swift */; };
 		6A17E10E2705EDA800F5F839 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17E10D2705EDA800F5F839 /* MainView.swift */; };
 		6A17E1112705F3F700F5F839 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17E1102705F3F700F5F839 /* CheckoutView.swift */; };
+		6ADF0DD4270637230005B6D6 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF0DD3270637230005B6D6 /* FavoriteButton.swift */; };
+		6ADF0DD727064A3E0005B6D6 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF0DD627064A3E0005B6D6 /* Favorites.swift */; };
+		6ADF0DDA27064F600005B6D6 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF0DD927064F600005B6D6 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		6A17E10A2705EACF00F5F839 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		6A17E10D2705EDA800F5F839 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6A17E1102705F3F700F5F839 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		6ADF0DD3270637230005B6D6 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		6ADF0DD627064A3E0005B6D6 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		6ADF0DD927064F600005B6D6 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +79,17 @@
 				6A17E0E62705C73800F5F839 /* iDineApp.swift */,
 				6A17E0E82705C73800F5F839 /* ContentView.swift */,
 				6A17E1062705D70F00F5F839 /* ItemDetail.swift */,
+				6ADF0DD3270637230005B6D6 /* FavoriteButton.swift */,
 				6A17E10A2705EACF00F5F839 /* OrderView.swift */,
 				6A17E1102705F3F700F5F839 /* CheckoutView.swift */,
 				6A17E10D2705EDA800F5F839 /* MainView.swift */,
+				6ADF0DD927064F600005B6D6 /* FavoritesView.swift */,
 				6A17E1032705D11700F5F839 /* ItemRow.swift */,
 				6A17E0F72705C7AA00F5F839 /* Helper.swift */,
 				6A17E0F82705C7AA00F5F839 /* menu.json */,
 				6A17E0F92705C7AA00F5F839 /* Menu.swift */,
 				6A17E0F62705C7A900F5F839 /* Order.swift */,
+				6ADF0DD627064A3E0005B6D6 /* Favorites.swift */,
 				6A17E0EA2705C73900F5F839 /* Assets.xcassets */,
 				6A17E0EF2705C73900F5F839 /* Info.plist */,
 				6A17E0EC2705C73900F5F839 /* Preview Content */,
@@ -168,6 +177,7 @@
 			files = (
 				6A17E1072705D70F00F5F839 /* ItemDetail.swift in Sources */,
 				6A17E10E2705EDA800F5F839 /* MainView.swift in Sources */,
+				6ADF0DDA27064F600005B6D6 /* FavoritesView.swift in Sources */,
 				6A17E1112705F3F700F5F839 /* CheckoutView.swift in Sources */,
 				6A17E10B2705EACF00F5F839 /* OrderView.swift in Sources */,
 				6A17E0FA2705C7AA00F5F839 /* Order.swift in Sources */,
@@ -175,6 +185,8 @@
 				6A17E0E72705C73800F5F839 /* iDineApp.swift in Sources */,
 				6A17E1042705D11700F5F839 /* ItemRow.swift in Sources */,
 				6A17E0FB2705C7AA00F5F839 /* Helper.swift in Sources */,
+				6ADF0DD727064A3E0005B6D6 /* Favorites.swift in Sources */,
+				6ADF0DD4270637230005B6D6 /* FavoriteButton.swift in Sources */,
 				6A17E0FD2705C7AA00F5F839 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
